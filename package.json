@@ -5,6 +5,9 @@
   "author": "shafayat",
   "license": "MIT",
   "type": "module",
+  "prisma": {
+    "schema": "./prisma/schema"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts"
   },
