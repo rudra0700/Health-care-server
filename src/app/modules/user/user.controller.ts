@@ -62,7 +62,6 @@ const getAllUserFromDB = catchAsync(async (req: Request, res: Response) => {
   // fields, searchTerm --> filtering and searching
   const filter = pick(req.query, ["role", "status", "email", "searchTerm"]);
   const options = pick(req.query, ["page", "limit", "sortBy", "sortOrder"]);
-  console.log("from controller", filter);
 
   const result = await UserServices.getAllUserFromDB(filter, options);
 

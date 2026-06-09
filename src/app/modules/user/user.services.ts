@@ -129,7 +129,6 @@ const createDoctor = async (req: Request) => {
 const getAllUserFromDB = async (filter: any, options: any) => {
   const { page, limit, skip, sortBy, sortOrder } = paginationHelper(options);
   const { searchTerm, ...filteringFields } = filter;
-  console.log(searchTerm, filteringFields);
 
   const andConditions: Prisma.UserWhereInput[] = [];
 
